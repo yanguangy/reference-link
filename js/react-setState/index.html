@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title> React应用实例1 </title>
+    <script src="https://static.runoob.com/assets/react/react-0.14.7/build/react.js"></script>
+    <script src="https://static.runoob.com/assets/react/react-0.14.7/build/react-dom.js"></script>
+    <script src="https://static.runoob.com/assets/react/browser.min.js"></script>
+  </head>
+ <body>
+    <div id="message" align="center"></div>
+
+    <script type="text/babel">
+      var Counter = React.createClass({
+        getInitialState: function () {
+          return { clickCount: 0 };
+        },
+        componentDidMount(){
+            setInterval(()=>{
+                this.setState({
+                    clickCount:this.state.clickCount+1
+                })
+            },2000)
+        }, 
+        handleClick: function () {
+          this.setState(function(state) {
+            return {clickCount: state.clickCount + 1};
+          });
+        },
+        render: function () {
+          return (<div>
+            <h2 onClick={this.handleClick} style={{marginTop:this.state.clickCount*10+'px'}}>点我！点击次数为: {this.state.clickCount}</h2>
+            {
+                this.state.clickCount===2? null : <div>22136541654654131324154313541536
+                </div>
+            }
+            
+            </div>);
+        }
+      });
+      ReactDOM.render(
+        <Counter />,
+        document.getElementById('message')
+      );
+    </script>
+  </body>
+</html>
