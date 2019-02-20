@@ -6,7 +6,9 @@
 ### js
 
 - [原生js写提示弹窗](http://www.yaya12.com/archives/1092)
+- react-setState
 
+### mocha
 
 ### 待整理
 
