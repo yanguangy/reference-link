@@ -7,6 +7,7 @@
 
 - [原生js写提示弹窗](http://www.yaya12.com/archives/1092)
 - react-setState
+- 面试题整理
 
 ### mocha
 
