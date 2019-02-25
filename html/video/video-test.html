@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>video标签属性体验</title>
+</head>
+<body>
+    <h2>
+        设置autoplay,自动播放
+    </h2>
+    <p>
+           加上 muted="muted" ，可以防止部分浏览器不自动播放（chrome，欧朋）
+    </p>
+    <video src="./test.mp4" width="600px" height="400px" controls="controls" autoplay="autoplay" muted="muted">
+        浏览器不兼容提示信息
+    </video>
+
+
+    <h2>
+        设置loop，循环播放
+    </h2>
+    <video src="./test.mp4" width="600px" height="400px" controls="controls" loop="loop">
+        浏览器不兼容提示信息
+    </video>
+
+    <h2>
+        设置muted，静音出场
+    </h2>
+    <video src="./test.mp4" width="600px" height="400px" controls="controls" muted="muted">
+        浏览器不兼容提示信息
+    </video>
+
+    <h2>
+        设置poster,相当于封面
+    </h2>
+    <video src="./test.mp4" width="600px" height="400px" controls="controls" poster="./video-thume.jpg">
+        浏览器不兼容提示信息
+    </video>
+
+    <h2>
+        设置preload,好像没有什么效果
+    </h2>
+    <video src="./test.mp4" width="600px" height="400px" controls="controls" preload="preload">
+        浏览器不兼容提示信息
+    </video>
+    
+    <h2>
+        设置宽高
+    </h2>
+    <video src="./test.mp4" width="600px" height="400px" controls="controls">
+        浏览器不兼容提示信息
+    </video>
+
+    <h2>
+        设置volume，控制音量，不好使
+    </h2>
+    <video src="./test.mp4" width="600px" height="400px" controls="controls" volume=0.5>
+        浏览器不兼容提示信息
+    </video>
+
+</body>
+</html>
